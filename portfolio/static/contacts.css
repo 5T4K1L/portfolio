@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Jura:wght@300&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gugi&family=Itim&family=JetBrains+Mono:wght@500&family=Jura:wght@300&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    /* background-color: #003535; */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+} 
+
+.container {
+    padding: 10px 10%;
+    height: 100vh;
+    background: linear-gradient(#071814, #28554B);
+}
+
+.nav nav h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3em;
+    margin-left: 1.2em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 25px 0 25px ;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #00FFFF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5em;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.contact {
+    color: #00FF29;
+}
+
+.contact-info a {
+    color: #28BFFF;
+    text-decoration: none;
+}
+
+.formtitle {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 11%;
+    font-size: 1.2em;
+}
+
+textarea {
+    width: 215%;
+    height: 125px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2B5656;
+    color: white;
+    font-size: 16px;
+    resize: none;
+}
+
+.formform {
+    position: absolute;
+    top: 28%;
+    left: 11.3%;
+}
+
+.formthree textarea:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+table {
+    margin-top: 1em;
+}
+
+table tr {
+    display: inline;
+    margin-right: 5em;
+    background: none;
+}
+
+table tr td input {
+    padding: 10px 1em;
+    border-radius: 10px;
+    border: none;
+    width: 16em;
+    height: 3em;
+    color: white;
+    background: #2B5656;
+}
+
+.formthree {
+    margin-top: 1em;
+}
+
+.formthree tr td input {
+    height: 10em;
+    width: 38.5em;
+    display: flex;
+}
+
+button {
+    background-color: #428C8C;
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+    color: white;
+    width: 15em;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #92ADAD;
+    cursor: pointer;
+}
+
+.containersecondcontent h1 {
+    position: absolute;
+    font-size: 2.5em;
+    top: 20%;
+    left: 62.5%;
+    color: #00FF29;
+}
+
+.contact-info ul {
+    list-style: none;
+    position: absolute;
+    right: 24em;
+    top: 12em;
+}
+
+.contact-info ul li p {
+    color: white;
+    margin-top: 1.5em;
+}
+
+.followme {
+    position: relative;
+}
+
+.followme h1 {
+    color: #00FFFF;
+    font-family: 'Gugi', cursive;
+    position: absolute;
+    left: 19.1em;
+    top: 6em;
+}
+
+.follow-socmeds ul {
+    display: flex;
+    position: absolute;
+    top: 13em;
+    left: 47.9em;
+}
+
+.follow-socmeds ul li {
+    list-style: none;
+    margin-right: 2em;
+}
+
+.follow-socmeds a {
+    font-family: 'Gugi', cursive;
+    color: white;
+    text-decoration: none;
+}
+
+.facebook, .instagram, .github {
+    height: 3em;
+}
+
+.afteranimation {
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    animation: aftersub 0.5s ease-out forwards; 
+}
+
+@keyframes aftersub {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+.message {
+    color: white;
+    /* opacity: 0%; */
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    font-size: 3.5em;
+    
+    animation: message 2s;
+}
+
+@keyframes message {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.messagetwoo {
+    color: white;
+    /* opacity: 0%; */
+    position: absolute;
+    top: 50%;
+    left: 36.2%;
+    font-size: 1em;
+
+    animation: messagetwo .5s;
+}
+
+@keyframes messagetwo {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

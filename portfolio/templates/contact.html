@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'contacts.css' %}" />
+    <!-- <link rel="stylesheet" href="/contacts.css" /> -->
+
+    <script src="/static/script.js"></script>
+    <script src="/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("gjs8qr9zPBTPIar3W");
+      })();
+    </script>
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="containerfirstform">
+        <div class="nav">
+          <nav>
+            <h1>Alfonzo</h1>
+            <ul>
+              <li><a class="home" href="{% url 'homepage' %}">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="formcontent">
+          <div class="formtitle">
+            <h1>Let me know more about you!</h1>
+          </div>
+
+          <div class="formform">
+            <table class="formone">
+              <tr>
+                <td>
+                  <input id="firstName" type="text" placeholder="First Name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input id="lastName" type="text" placeholder="Last Name" />
+                </td>
+              </tr>
+            </table>
+
+            <table class="formtwo">
+              <tr>
+                <td><input id="email" type="text" placeholder="Email" /></td>
+              </tr>
+              <tr>
+                <td><input id="phone" type="text" placeholder="Phone" /></td>
+              </tr>
+            </table>
+
+            <table class="formthree">
+              <tr>
+                <td>
+                  <textarea id="message" placeholder="Message"></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <button onclick="sendMail(); testLang()">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="containersecondcontent">
+        <h1>Contact Information</h1>
+
+        <div class="contact-info">
+          <ul>
+            <li><p>+63 950 835 8986</p></li>
+            <li>
+              <p>
+                <a href="mailto:>akilabiel3@gmail.com">akilabiel3@gmail.com</a>
+              </p>
+            </li>
+          </ul>
+          <div class="followme">
+            <div class="follow-socmeds">
+              <ul>
+                <li>
+                  <p>
+                    <a
+                      href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100084295123684"
+                      ><img class="facebook" src="{% static 'fb.svg' %}" alt=""></i
+                    ></a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://www.instagram.com/alfonzoakil/"
+                      ><img class="instagram" src="{% static 'instagram.svg' %}" alt=""></a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://github.com/5T4K1L">
+                      <img class="github" src="{% static 'github.svg' %}" alt="">
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aftersend">
+      <div id="messagesent">
+        <p>MESSAGE SENT</p>
+      </div>
+      <div id="messagetwo">
+        <p>Bringing you home...</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styling.css' %}" />
+    <link rel="stylesheet" href="{% static 'about.css' %}" />
+    <script src="{% static 'index.js' %}"></script>
+    <script src="{% static 'about.js' %}"></script>
+    <title>Alfonzo`s Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="homeanimation">
+        <div class="loadanimation">
+          <h1>Home</h1>
+        </div>
+      </div>
+      <div id="box">
+        <img id="boximage6" class="polygon" src="{% static 'h1.png' %}" />
+        <img id="boximage1" class="polygon" src="{% static '( ).png' %}" />
+        <img id="boximage2" class="hey" src="{% static '(req).png' %}" />
+        <img id="boximage9" class="polygon" src="{% static 'codesign.png' %}" />
+        <img id="boximage5" class="polygon" src="{% static 'function.png' %}" />
+        <img id="boximage3" class="polygon" src="{% static '{ };.png' %}" />
+        <img id="boximage8" class="polygon" src="{% static 'print.png' %}" />
+        <img id="boximage7" class="polygon" src="{% static 'if else.png' %}" />
+        <img id="boximage4" class="polygon" src="{% static 'def.png' %}" />
+      </div>
+      <div class="nav">
+        <nav>
+          <h1>Alfonzo</h1>
+          <ul>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#aiu">Apps I Use</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <img src="/static/pic.png" alt="" /> -->
+      <div class="body">
+        <h4 class="greet">Hello! I'm</h4>
+        <h1 class="name">Alfonzo Akil</h1>
+        <p class="programmer">Programmer</p>
+      </div>
+    </div>
+
+    <section id="aboutme">
+      <div class="about-container">
+        <ul>
+          <h1>Meet</h1>
+          <h1>ME</h1>
+        </ul>
+        <div class="about-container-2">
+          <div class="about-3">
+            <ul>
+              <p id="about-1">About</p>
+              <p id="skills-1">Skills</p>
+              <p id="language-1">Language</p>
+            </ul>
+          </div>
+
+          <div class="about-4">
+            <p id="aboutfirst">
+              I’m Alfonzo Akil. A 17-year old, full stack developer with almost
+              one year of experience. I am currently studying Information and
+              Technology here on Mapua, Philippines.
+            </p>
+            <p id="aboutsecond">
+              When I was five years old, my father taught me how to play drums.
+              Then eventually I become interested on playing piano. On April
+              2023, I learned how to play both electric and acoustic guitar. I
+              also learned to play ukulele as it is my brother’s instrument.
+              Then right now, we’re both currently learning how to play violin.
+            </p>
+            <div id="aboutthird">
+              <p>The languages I use are:</p>
+              <li>Python (main),</li>
+              <li>Javascript,</li>
+              <li>Java,</li>
+              <li>PostgreSQL, and</li>
+              <li>learning more languages</li>
+            </div>
+          </div>
+        </div>
+
+        <div id="about-bottom">
+          <ul id="skills-bot">
+            <li id="skills-bot1">Instruments</li>
+            <li id="skills-bot2">Hobbies</li>
+            <li id="skills-bot3">Sports</li>
+          </ul>
+          <p id="hobbies">
+            I edit videos and photos as I have passion also for photography and
+            videography. I used to “white hack” before but then I become
+            interested in programming. I also make music as I have a YouTube
+            channel showcasing my works.
+          </p>
+          <p id="sports">
+            I play badminton as my main sport. I also play ball games like
+            basketball, volleyball. Racket sports like table tennis and tennis.
+            Mind-thinking games like chess. I also used to swim. And I’m biking
+            whenever I have free time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aiu"></section>
+  </body>
+</html>

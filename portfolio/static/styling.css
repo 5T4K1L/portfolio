@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Jura:wght@300&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.loadanimation h1 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 3em;
+}
+
+#homeanimation {
+    background: linear-gradient(#090909, #34304A);
+    height: 100vh;
+    
+    animation: homeanim 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes homeanim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {height: 100vh;}
+    70% {height: 100vh;}
+    80% {height: 100vh;}
+    90% {height: 100vh;}
+
+    100% {
+        opacity: 0;
+        height: 0vh;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav nav h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3em;
+    margin-left: 1.2em;
+}
+
+.container {
+    padding: 10px 10%;
+    background: linear-gradient(#090909, #34304A);
+    height: 100vh;
+}
+
+#box {
+    font-size: 1em;
+}
+
+#box img:nth-child(1) {
+    height: 5em;
+    position: absolute;
+    top: 14em;
+    left: 19em;
+
+    opacity: 0;
+}
+@keyframes boxanimate1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#box img:nth-child(2) {
+    height: 8em;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    opacity: 0;
+}
+@keyframes boxanimate2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(3) {
+    height: 6em;
+    position: absolute;
+    top: 20em;
+    left: 35em;
+    opacity: 0;
+}
+@keyframes boxanimate3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(4) {
+    height: 8em;
+    position: absolute;
+    top: 30em;
+    left: 9em;
+    opacity: 0;
+}
+@keyframes boxanimate4 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(5) {
+    height: 4em;
+    position: absolute;
+    top: 7em;
+    left: 48em;
+    opacity: 0;
+}
+@keyframes boxanimate5 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(6) {
+    height: 6em;
+    position: absolute;
+    top: 15em;
+    left: 70em;
+    opacity: 0;
+}
+@keyframes boxanimate6 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(7) {
+    height: 8em;
+    position: absolute;
+    top: 32em;
+    left: 45em;
+    opacity: 0;
+}
+@keyframes boxanimate7 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#box img:nth-child(8) {
+    height: 6em;
+    position: absolute;
+    top: 3em;
+    left: 81em;
+
+    opacity: 0%;
+}
+@keyframes boxanimate8 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#box img:nth-child(9) {
+    height: 5em;
+    position: absolute;
+    top: 30em;
+    left: 70em;
+
+    opacity: 0%;
+}
+@keyframes boxanimate9 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 25px 0 25px ;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    font-size: 1em;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FF4D00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5em;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+img {
+    position:absolute;
+    height: 35em;
+    left: 12.65em;
+}
+
+.container .body {
+    font-family: 'Jura', sans-serif;
+    color: white;
+}
+
+.body {
+    margin-top: 18%;
+    margin-left: 69%;
+}
+
+
+.body .container {
+    background-color: black;
+}
+
+.container .body h4 {
+    font-size: 1.5em;
+    margin-left: 10.16em;
+}
+
+.container .body h1 {
+    font-size: 4em;
+}
+
+.container .body p {
+    font-size: 1em;
+}
+
+.appsuse-container {
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+
+.apps {
+    color: white;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+.apps h1 {
+    color: #00FFFF;
+    font-size: 4em;
+}
+
+.apps a button {
+    font-family: 'Jura', sans-serif;    
+    background: none;
+    border: none;
+    color: white;
+    background-color: #333647;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin-top: 10px;
+    margin-left: 5em;
+    transition: 0.5s;
+    width: 13em;
+}
+
+.apps button:hover {
+    background-color: #00FFFF;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.appsuse-content {
+    position: relative;
+    top: 20%;
+    right: 2.5em;
+}
+
+.appsuse-content .title {
+    position: absolute;
+    top: 250%;
+    right: 12.3%;
+    color: #00FFFF;
+}
+
+.appsuse-content .title ul {
+    list-style: none;
+    display: flex;
+}
+
+.appsuse-content .title li {
+    margin: 0 3.5em;
+}
+
+.programmer {
+    color: #F5FFB9;
+    position: relative;
+}
+
+.desc .descone {
+    position: absolute;
+    top: 450%;
+    right: 32%;
+    font-size: 1.5em;
+}
+
+.desc .desctwo {
+    position: absolute;
+    top: 450%;
+    right: 17.3%;
+    font-size: 1.5em;
+}
+
+.desc h5 {
+    margin-top: 1em;
+}
+
+.desc .figma, .ai, .py {
+    color: #42FF00;
+}

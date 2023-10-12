@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=JetBrains+Mono:wght@500&family=Jura:wght@300&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gugi&family=IM+Fell+Double+Pica+SC&family=Itim&family=JetBrains+Mono:wght@500&family=Jura:wght@300&family=Pixelify+Sans&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+.about-container {
+    background-color: #282536;
+    height: 100vh;
+    position: relative;
+}
+
+.about-container ul {
+    display: flex;
+    gap: 5px;
+    font-size: 2em;
+}
+
+.about-container h1 {
+    position: relative;
+    top: 0.9em;
+    left: 2em;
+}
+
+.about-container h1:nth-child(1) {
+    font-family: "IM FELL DOUBLE PICA SC", sans-serif;
+    color: white;
+}
+
+.about-container h1:nth-child(2) {
+    font-family: "IM FELL DOUBLE PICA SC", sans-serif;
+    color: #00FFFF;
+}
+
+.about-container-2 {
+    background: #332F47;
+    height: 36em;
+    margin: 1em 2em 0;
+    border-radius: 10px;
+}
+
+.about-3 {
+    height: 2.5em;
+    width: 40em;
+    background-color: #365273;
+    border-radius: 10px;
+    position: relative;
+    top: 3em;
+    left: 4em;
+}
+
+.about-3 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.about-3 p {
+    font-size: 22px;
+    color: white;
+    padding-top: 5px;
+}
+
+.about-3 p:hover {
+    cursor: pointer;
+}
+
+#about-1 {
+    color: #C9C7FF;
+}
+
+#skills-1 {
+    color: white;
+}
+
+.about-4 {
+    margin-top: 5em;
+}
+
+#aboutfirst {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 6.3em;
+    left: 3.2em;
+    width: 21em;
+    line-height: 2em;
+}
+
+#aboutsecond {
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+    top: 7.3em;
+    left: 4.5em;
+    width: 27em;
+    line-height: 3em;
+}
+
+#aboutsecond, #aboutthird {
+    opacity: 0;
+}
+
+#aboutthird {
+    color: white;
+    opacity: 0;
+    font-size: 2em;
+    position: absolute;
+    top: 6.8em;
+    left: 4em;
+}
+
+#aboutthird p {
+    margin-bottom: 1em;
+}
+
+#aboutthird li {
+    margin-bottom: .2em;
+}
+
+#about-bottom {
+    height: 2.5em;
+    width: 40em;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 35.5em;
+    left: 6em;   
+}
+
+#about-bottom ul li {
+    list-style: none;
+    font-size: .8em;
+    display: flex;
+    margin: 3px 2em 0 2em;
+    color: #15688A;
+    opacity: 0;
+}
+
+#about-bottom ul li:hover {
+    cursor: pointer;
+}
+
+#about-bottom ul li:nth-child(1) {
+    color: #8A1515;
+}
+
+#hobbies {
+    opacity: 0;
+    color: white;
+    position: relative;
+    bottom: 17.5em;
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+#sports {
+    opacity: 0;
+    color: white;
+    position: relative;
+    bottom: 31em;
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+#aiu {
+    height: 100vh;
+    background-color: black;
+}
